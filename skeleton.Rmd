@@ -13,6 +13,14 @@ link-citations: yes
 
 ---
 
+
+```{r capa, fig.fullwidth = TRUE, fig.width=30, fig.height=10, echo=FALSE}
+knitr::include_graphics("Plots/sits_capa.png")
+```
+
+
+
+
 ```{r setup, include=FALSE}
 library(tufte)
 # invalidate cache when the tufte version changes
