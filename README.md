@@ -1,53 +1,77 @@
-Time Weighted Dynamic Time Warping (TW-DTW)
+Time-Weighted Dynamic Time Warping (TW-DTW)
 
-This is a implementation of the TW-DTW to classify paddy rice crops within a Area of Interest (AOI) at southern Brazil.
+This is a implementation of the TW-DTW to classify paddy rice crops in southern Brazil.
 
-The algorith was used on GEE in order to post-processing MapBiomas Land Use Land Cover (LULC) 10-m. Which is a Sentinel-2 derived LULC collection.
-The focus was applying consistently the TW-DTW that retrieves the time-series features and create a dissimilarity score representing how far the pixel is from the reference pixel samples.
+The current repository is a show-case of how TW-DTW has robustness on classifing time crops, taking its seasonality by looking at the similarity of time series. 
 
-The TW-DTW was implemented by: and outputs two bands: Classification and Score. 
+The study is based on a multi-sensor approach, using Sentinel-1 and Sentinel-2.
 
-A further analysis on the score was processed in order to fine-tunning the classification and improve the results. The analysis used OTSU thresholding for threshold dissimilarity scores.
+## QuickStart
 
-TW-DTW relies powerful on a scarce data regions. With only 13 samples I was able to classify rice crops extensively. 
-  
+- For a better context and understading, please have a look at the study.[]()
+
+- The whole study version is publish here: []()
+
 ## Repository Structure
 
 ```bash 
 scripts_R
  ┣ Colab
- ┃ ┗ DTW_GEE_python.ipynb # Phenological analysis of temporal rice crops
+ ┃ ┗ DTW_GEE_python.ipynb ## Retrieves the time series spectral
  ┣ GEE
- ┣ Plots
- ┃ ┣ classicationmap_dtw.png
- ┃ ┣ dissimiliarity_score.png
- ┃ ┣ multitemporal_legend.png
- ┃ ┗ padddy-rice-mapbiomas.jpeg
+ ┃ ┣ tw-dtw-downloader.js # Prepare files to be download
+ ┃ ┣ twdtw-binary-classification ## Implement the TWDTW from the scratch
+ ┃ ┣ twdtw-result-analysis2 # PostProcessing1
+ ┃ ┗ twdtw_result_analysis_assessment.js #PostProcessing2 - Implement connectivy and focal mean
+ ┣ pdf
+ ┃ ┗ Emanuel-TWDTW.pdf ## Complete study
+ ┣ Plots ## Plots and figs
  ┣ R
  ┃ ┣ barplot.R
  ┃ ┣ barplot2.R
  ┃ ┣ colorbar.R
- ┃ ┣ dtw_score.R
+ ┃ ┣ dtw_score.R ##Plot dissimilarity scores
  ┃ ┣ multi_temporal.kra
- ┃ ┗ vis-sits.R
- ┣ Study
- ┃ ┗ Emanuel-TWDTW.pdf
+ ┃ ┗ vis-sits.R ## Plot multi-temporal 
+ ┣ skeleton_cache ## cache of Rmarkdown
  ┣ .gitignore
- ┣ GIF-NDVI.gif
- ┗ README.md
- ```bash
-- R
-  | - dtw_score.R ## Create plots for the dissimilarity score
-  | - sits.R ## Create the multi-temporal composition plot
-- GEE
-  - tw-dtw-implementation ## Implementation of the TW-DTW
-  - tw-dtw-assessment ## Assessment of the results
-  - tw-dtw-post-processing ## OTSU thresholding and connectivity of pixels methods
-  - tw-dtw-download ## Management and downloading of the results for plot in R
-  - tw-dtw-post-processing-2 ## Plots histograms, multi-temporal compositions
-- Colab
-|- dtw.ipynb ## Colab notebook integrated with GEE to create backscatter analysis and temporal spectral responses
+ ┣ .Rhistory
+ ┣ presentation.md
+ ┣ README.md
+ ┣ skeleton.bib
+ ┣ skeleton.html
+ ┣ skeleton.Rmd
+ ┗ skeletones.bib
 
-## Acknowledgements 
-- SoilWatch
-- 
+ ```bash
+
+## Utils
+
+- Check this GEE panel with the all results: [Results]("https://ee-emanuelgoulartf.projects.earthengine.app/view/twdtw-resultspanel")
+
+## GIF
+
+![gif](Plots/GIF-NDVI.gif)
+
+
+## Classification Results
+
+![Classification](Plots/qualitymap/classificationmap_dtw.png)
+
+## Dissimilarity Score
+
+![Dissimilarity](Plots/qualitymap/diss_score.png)
+
+## LULC of Araranguá Region:
+
+![lulc](Plots/lulc_.jpg)
+
+## Multi-Temporal Time Series of NDVI 
+
+![sits](Plots/qualitymap/sits-rs.png)
+
+# Acknowledgements 
+
+- [SoilWatch]("https://github.com/SoilWatch")
+- [Willian Oulette]("https://github.com/wouellette/ee-dynamic-time-warping")
+- [MapBiomas]("https://brasil.mapbiomas.org/en/")

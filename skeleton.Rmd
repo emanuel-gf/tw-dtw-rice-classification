@@ -187,6 +187,12 @@ kable(features,
 See a explanation about the TW-DTW parameters here: https://github.com/wouellette/ee-dynamic-time-warping/blob/master/dtw.js
 ")`
 
+
+```{r spectral,fig.margin=TRUE,fig.cap="Sampling Backscatering and Spectral signatures", fig.width = 2, fig.height = 2, fig.fullwidth = TRUE, warning=FALSE, message=FALSE, cache=TRUE, echo=FALSE}
+knitr::include_graphics("Plots/qualitymap/ricevsnonrice.png")
+```
+
+
 **Parameters of TW-DTW **
 ```{r margin-table, fig.margin=TRUE, echo=FALSE}
 
