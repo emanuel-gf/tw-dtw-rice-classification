@@ -8,9 +8,9 @@ The study is based on a multi-sensor approach, using Sentinel-1 and Sentinel-2.
 
 ## QuickStart
 
-1. For a better context and understading, please check this study.[Study Case]("https://emanuel-gf.github.io/tw-dtw-rice-classification/")
+1. For a better context and understading, please check this study. ![Study Case]("https://emanuel-gf.github.io/tw-dtw-rice-classification/")
 
-2. The whole study version is publish here: [PDF]("https://github.com/emanuel-gf/tw-dtw-rice-classification/blob/main/pdf/Emanuel-TWDTW.pdf")
+2. The whole study version is publish here: ![PDF]("https://github.com/emanuel-gf/tw-dtw-rice-classification/blob/main/pdf/Emanuel-TWDTW.pdf")
 
 ## Repository Structure
 
