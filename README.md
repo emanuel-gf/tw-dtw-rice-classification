@@ -11,7 +11,7 @@ The study is based on a multi-sensor approach, using Sentinel-1 and Sentinel-2.
 1. For a better context and understading, please check this study. 
 [Study Case](https://emanuel-gf.github.io/tw-dtw-rice-classification/)
 
-2. The whole study version is publish here: 
+2. The whole study version is publish at this pdf: 
 [PDF](https://github.com/emanuel-gf/tw-dtw-rice-classification/blob/main/pdf/Emanuel-TWDTW.pdf)
 
 ## Repository Structure
@@ -42,8 +42,8 @@ scripts_R
  ┣ README.md
  ┣ skeleton.bib
  ┣ skeleton.html
- ┣ skeleton.Rmd
- ┗ skeletones.bib
+ ┣ skeleton.Rmd ## Create the study case file
+ ┗ skeletones.bib ## add bib for the .Rmd
  ```
 
 ## Utils
@@ -73,6 +73,6 @@ scripts_R
 
 # Acknowledgements 
 
-- [SoilWatch]("https://github.com/SoilWatch")
-- [Willian Oulette]("https://github.com/wouellette/ee-dynamic-time-warping")
-- [MapBiomas]("https://brasil.mapbiomas.org/en/")
+- [SoilWatch](https://github.com/SoilWatch)
+- [Willian Oulette](https://github.com/wouellette/ee-dynamic-time-warping)
+- [MapBiomas](https://brasil.mapbiomas.org/en/)
