@@ -1,0 +1,598 @@
+/**  Unconment this line so assess the same points used to train.
+var rice = /* color: #98ff00 */ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Point([-49.435879783905484, -28.902133069886883]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.61185458138357, -28.89217182941817]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "1"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.87183000366223, -29.217704299502333]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "2"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.76577951032895, -29.2657557859032]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "3"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.84041134137267, -29.130259469153103]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "4"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.702032752551574, -29.04351424852763]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "5"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.659075802221885, -28.976813288925428]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "6"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.548243184385704, -28.76706250594352]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "7"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.70887468156988, -29.091552741196722]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "8"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.7793965254817, -28.873504839562873]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "9"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.6660789085507, -28.73843100596921]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "10"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.55950521345754, -28.644014500340976]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "11"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.180830983291564, -28.677869047597742]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "12"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.339232252075675, -28.830707048058496]),
+            {
+              "label": "rice",
+              "class": 1,
+              "system:index": "13"
+            })]),
+    non_rice = /* color: #d63000 */ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Point([-49.31830572516361, -28.80994301343562]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.5175535261101, -28.843237156676683]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "1"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.7883108360364, -29.250620310519498]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "2"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.894618261604876, -29.165695713577016]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "3"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.85793485133627, -29.082816660238777]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "4"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.67431620525186, -29.07787805147704]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "5"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.7106652143715, -29.043496521950697]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "6"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.691295616338145, -28.95291983121575]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "7"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.71910690594036, -28.88686969570478]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "8"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.557727945724096, -28.824716877494183]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "9"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.5622616651423, -28.996909401529603]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "10"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.573754703185266, -28.714609759266008]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "11"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.141014101858886, -28.721222442214646]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "12"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([-49.341275016543236, -28.588698416682785]),
+            {
+              "label": "non_rice",
+              "class": 2,
+              "system:index": "13"
+            })]);
+//
+// --------------------------------------------------------
+/**
+ * Main SCRIPT.
+ * Here the Sentinel1 and S2 data are retrieved over the request time period
+ * The bands are handled and ready to be passed into the twdtw
+ * The twdtw should be run on the background, instead of it will crash the gee.
+ * Run on background by calling as an asset.
+ * 
+ * The whole calculation takes 5~6 hours.
+
+TWDTW is calculated for Rice and Non-Rice, making a binary classification with DWDTW
+The number of bands is reduced in order to retrieve more information and the data is adjusted to match the growing period.
+
+The following pdf explains the class number of LULC from Mapbiomas: https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2024/10/Legenda-Colecao-9-LEGEND-CODE_v2.pdf
+Written by: Emanuel G.
+
+**/
+// Import external dependencies
+var palettes = require('users/gena/packages:palettes');
+var wrapper = require('users/adugnagirma/gee_s1_ard:wrapper'); // 
+var S2Masks = require('users/soilwatch/soilErosionApp:s2_masks.js'); // S2 handler
+var composites = require('users/soilwatch/soilErosionApp:composites.js'); // S2 handler 
+var Palettes_mapbiomas = require('users/mapbiomas/modules:Palettes.js'); // MapBiomas LULC Pallete Modulo
+var DTW = require('users/soilwatch/functions:dtw.js'); // Import the Dynamic Time Warping script
+ 
+// ------------------------------------------------------------------------------------------
+/**/// Add Region of Interest - ROI
+
+var roi = ee.FeatureCollection('projects/ee-emanuelgoulartf/assets/HidrogeoSC_Regiao_Hidrografica')
+  .filter(ee.Filter.eq('rh_sigla','RH 10'));
+
+Map.centerObject(roi);
+Map.addLayer(roi,{},'Ararangua',0);
+
+//--------------------------------------------------------------------------------------------
+/**/ // FC of sampling classes
+// Create a FC by joining all the samples. 
+// This is structuring the training points of the TW-DTW
+
+var sampling_classes = rice.merge(non_rice);
+// -------------------------------------------------------------------------------------
+/**/ // Add MapBiomas Layer
+// MapBiomas layer refers to agricultural fields classified with Sentinel-2 
+// The MapBiomas classification includes few crop types, as Rice. 
+// var irrigat_agric = ee.Image('projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_irrigated_agriculture_v1')
+//   .select(['irrigated_agriculture_2020','irrigated_agriculture_2021'])
+//   .divide(100)
+//   .toInt()
+//   .clip(roi); // clip for the watershed extent
+
+// vallues of 2 represent irrigated rice
+//values of 3 represent irrigated agricultered areas 
+
+//print(mapbioma.select(1)); // select the year 2020
+
+//Map.addLayer(irrigat_agric,{},'Irrigated Agric');
+
+// Add the LULC from mapbiomas in order to select the agrilcultural classes
+var palette = Palettes_mapbiomas.get('classification9');
+var vis = {'min': 0,'max': 69,'palette': palette,'format': 'png'};
+var colecao = ee.Image('projects/mapbiomas-public/assets/brazil/lulc/collection_S2_beta/collection_LULC_S2_beta')
+var colecao_2020 = colecao.select(4).clip(roi)
+
+//Map.addLayer(colecao_2020, vis, 'MapBiomas 10metros BETA - '+ 2020, true);
+
+// Remap LULC 
+var fromList = [1,3,4,5,6,49, 11,12,32,29,50, 18,19,39,20,62,41,36,46,47,35,48, 22,23,24,30,25, 26,33,31,27, 21, 9, 15, 40];
+var toList =  [1,1,1,1,1,1, 2,2,2,2,2, 18,18,18,18,18,18,18,18,18,18,18, 4,4,4,4,4, 5,5,5,5, 18, 9, 15, 18];
+
+// The result of the Remap is:
+// 1 - floresta - florest 
+// 2 - vegetacao herbeacea - Herbaceous and Shrubby Vegetation
+// 18 - agrilculture - 
+// 15 - Pasture
+// 9 - forest plantation (eucaliptus)
+// 21 - mosaic of uses
+// 4 - non vegetated area
+// 5 - water
+// 40 - rice
+
+var imgRemap = colecao_2020.remap({
+  from: fromList,
+  to: toList,
+  defaultValue: 0,
+  bandName: 'classification_2020'
+});
+
+// Create a mask to take out: city, water and pastures
+//var masked_lulc = imgRemap.updateMask(imgRemap.neq(4).and(imgRemap.neq(5)).and(imgRemap.neq(15)));
+
+// Selecting only Agriculture in order to decrease computational resources and classifying running the DTW over the classes
+var masked_lulc = imgRemap.updateMask(imgRemap.eq(18));
+Map.addLayer(masked_lulc, vis,'masked_LULC_2020');
+
+
+//-----------------------------------------------------------------------------------------------
+/**/ // DEM
+// Import ALOS AW3D30 latest DEM version v3.2
+var dem = ee.ImageCollection('JAXA/ALOS/AW3D30/V4_1').select("DSM");
+dem = dem.mosaic().setDefaultProjection(dem.first().select(0).projection());
+
+// NOt water mask
+// This mask is due to apply cloud filter at the S2 collection. Indicating locations of non-water pixels for the cloud shadow detection
+var not_water = colecao_2020.neq(5).selfMask()
+
+// Function to calculate the NDVI for planet mosaics
+var addNDVI = function(img){
+  return img.addBands(img.normalizedDifference(['B8','B4']).multiply(10000).toInt16().rename('ndvi'));
+};
+/**/ // -----------------------------------------------------------------------------------------------
+/**/ // TWD
+
+// Input data parameters
+var CLASS_NAME= 'class'; // Property name of the feature collection containing the crop type class attribute
+var AGG_INTERVAL = 30; // Number of days to use to create the temporal composite for 2020
+var TIMESERIES_LEN = 12; // Number of timestamps in the time series
+var PATTERNS_LEN = 12; // Number of timestamps for the reference data points
+var CLASS_NO = 2; // Number of classes to map. Rice an Non Ric 
+var S2_BAND_LIST = [ 'B8', 'B11', 'ndvi']; // S2 Bands to use as DTW input
+var S1_BAND_LIST = ['VV', 'VH']; // S1 Bands to use as DTW input
+var BAND_NO = S1_BAND_LIST.concat(S2_BAND_LIST).length; // Number of bands to use for the DTW. Currently,
+                // The default 7 bands are: S2 NDVI, S2 B2, S2 B3, S2 B11, S2 B12, S1 VV, S1 VH
+var DOY_BAND = 'doy'; // Name of the Day of Year band for the time-aware DTW implementation
+
+// DTW time parameters
+var BETA = 60; // Beta parameter for the Time-Weighted DTW, controlling the tolerance (in days) of the weighting.
+var ALPHA = 0.1; // ALPHA parameter for the Time-Weighted DTW, controlling steepness of the logistic distribution
+
+
+// -----------------------------------------------------------------------------------------------
+// Function to calculate TW-DTW
+
+var DTWClassification = function(year, collection_type){
+
+  var date_range = ee.Dictionary({'start': '2020-09-01', 'end': '2021-09-30'}); // WHOLE YEAR - Focused on the rice crop phenology
+  
+  // --------------------------------
+  // Sentinel 2 
+  // Uses pre-build functions to retrieve Sentinel-2 
+  
+  // Load the Sentinel-2 collection for the time period and area requested
+  var s2_cl = S2Masks.loadImageCollection(collection_type, date_range, roi);
+
+  // Perform cloud masking using the S2 cloud probabilities assets from s2cloudless,
+  // courtesy of Sentinelhub/EU/Copernicus/ESA
+  var masked_collection_ = s2_cl
+                          .filterDate(date_range.get('start'), date_range.get('end'))
+                          .map(S2Masks.addCloudShadowMask(not_water, 10000))
+                          .map(S2Masks.applyCloudShadowMask)
+                          .map(addNDVI); // Add NDVI to band list
+                          
+  // Mask the collection with the Mapbiomas LULC - Exclude cities, water, pasture
+  var masked_collection = masked_collection_.map(function(image) {return image.updateMask(masked_lulc)});
+  
+  // Generate a list of time intervals for which to generate a harmonized time series
+  var time_intervals = composites.extractTimeRanges(date_range.get('start'), date_range.get('end'), 30);// 30 days composite
+
+  // Generate harmonized monthly time series of FCover as input to the vegetation factor V, Harmonized means that the generated temporal aggregates are equally spaced in time
+  var s2_stack = composites.harmonizedTS(masked_collection, S2_BAND_LIST, time_intervals, {agg_type: 'geomedian'});
+  //print('s2',s2_stack)
+  
+  // ----------------------------------------------------
+  // Sentinel 1
+  // Define S1 preprocessing parameters, as per:
+  // Description: This script creates an analysis ready S1 image collection.
+  // License: This code is distributed under the MIT License.
+  var parameter = {//1. Data Selection
+                  START_DATE: date_range.get('start'),
+                  STOP_DATE: date_range.get('end'),
+                  POLARIZATION:'VVVH',
+                  ORBIT : 'DESCENDING', 
+                  GEOMETRY: roi,
+                  //2. Additional Border noise correction
+                  APPLY_ADDITIONAL_BORDER_NOISE_CORRECTION: true,
+                  //3.Speckle filter
+                  APPLY_SPECKLE_FILTERING: true,
+                  SPECKLE_FILTER_FRAMEWORK: 'MULTI',
+                  SPECKLE_FILTER: 'LEE',
+                  SPECKLE_FILTER_KERNEL_SIZE: 5,
+                  SPECKLE_FILTER_NR_OF_IMAGES: 10, // Number of images used for Multi-temporal Speckel Filter
+                  //4. Radiometric terrain normalization
+                  APPLY_TERRAIN_FLATTENING: true,
+                  DEM: dem,
+                  TERRAIN_FLATTENING_MODEL: 'VOLUME', // More desirable for vegetation monitoring.
+                                                      //Use "SURFACE" if working on urban or bare soil applications
+                  TERRAIN_FLATTENING_ADDITIONAL_LAYOVER_SHADOW_BUFFER: 0,
+                  //5. Output
+                  FORMAT : 'DB',
+                  CLIP_TO_ROI: true,
+                  SAVE_ASSETS: false
+  };
+
+  //Preprocess the S1 collection
+  var s1_ts_ = wrapper.s1_preproc(parameter)[1]
+              .map(function(image){return image.multiply(1e4).toInt16() // Convert to Int16 using 10000 scaling factor
+                                          .set({'system:time_start': image.get('system:time_start')})});
+  //print('s1',s1_ts);
+  
+  // Mask with Mapbiomas LULC
+  var s1_ts = s1_ts_.map(function(image) {return image.updateMask(masked_lulc)});
+  
+  // Create equally-spaced temporal composites covering the date range and convert to multi-band image
+  var s1_stack = composites.harmonizedTS(s1_ts, S1_BAND_LIST, time_intervals, {agg_type: 'geomedian'});
+  
+  //print('s1 stack',s1_stack);
+  
+    var filter = ee.Filter.equals({
+      leftField: 'system:time_start',
+      rightField: 'system:time_start'
+    });
+
+    // Create the join.
+    var simpleJoin = ee.Join.inner();
+
+    // Inner join
+    var innerJoin = ee.ImageCollection(simpleJoin.apply(s1_stack, s2_stack, filter));
+
+    var joined = innerJoin.map(function(feature) {
+      return ee.Image.cat(feature.get('primary'), feature.get('secondary'));
+    });
+    
+    //print('joined',joined);
+    
+    joined = joined.map(function(image){
+      var currentDate = ee.Date(image.get('system:time_start'));
+      var meanImage = joined.filterDate(currentDate.advance(-AGG_INTERVAL-1, 'day'),
+                                          currentDate.advance(AGG_INTERVAL+1, 'day')).mean();
+      // replace all masked values
+      var ddiff = currentDate.difference(ee.Date(ee.String(date_range.get('start')))
+                                        .format('YYYY').cat('-01-01'),
+                                        'day');
+      return meanImage.where(image, image).unmask(0)
+      .addBands(ee.Image(ddiff).rename('doy').toInt16())
+      .set({'doy': ddiff.toInt16()})
+      .copyProperties(image, ['system:time_start']);
+    }).sort('system:time_start');
+  
+  // Stacking each band by the time aggregation. It returns a Image where each band relates with the time-agg (e.g VV_2 is VV at the third month(march))
+  var s1s2_stack = ee.Image(joined.iterate(function(image, previous){return ee.Image(previous).addBands(image)}, ee.Image([])))
+                  .select(ee.List(S1_BAND_LIST.concat(S2_BAND_LIST)).add(DOY_BAND).map(function(band){return ee.String(band).cat('.*')}));
+  //print(s1s2_stack)
+  
+  var band_names = s1s2_stack.bandNames();
+  //print('band names',band_names)
+
+  // Sample the band values for each training data points
+  // If reference signatures are already defined, it uses those signatures rather than sampling them again.
+  var reference_signatures = s1s2_stack.sampleRegions({
+                                                      collection: sampling_classes,
+                                                      properties: [CLASS_NAME],
+                                                      scale : 10,
+                                                      geometries: true
+                                                    });
+print('reference signature' ,reference_signatures)
+  // Wrapper function for the DTW implementation, intended to iterate over each land cover/crop class
+  // provided in the reference signatures
+  var dtw_min_dist = function(key, val){
+    key = ee.Number.parse(key);
+    // Function to format the signatures to a DTW-ready EE array
+    var training_data_list = DTW.prepareSignatures(reference_signatures,
+                                                  CLASS_NAME,
+                                                  key,
+                                                  BAND_NO,
+                                                  PATTERNS_LEN,
+                                                  band_names);
+    
+    // Compute the class-wise DTW distance
+    return ee.ImageCollection(DTW.DTWDist(training_data_list,
+                                          joined.select('[^'+DOY_BAND+'].*'),
+                                          {patterns_no: val,
+                                          band_no: BAND_NO,
+                                          timeseries_len: TIMESERIES_LEN,
+                                          patterns_len: PATTERNS_LEN,
+                                          constraint_type: 'time-weighted',
+                                          beta: BETA,
+                                          alpha: ALPHA
+                                          })
+          ).min()
+          .rename('dtw')
+          // Add class band corresponding to the land cover/crop class computed.
+          // This is useful/necessary to generate the hard classification map from the dissimilarity values
+          .addBands(ee.Image(key).toByte().rename('band'));
+  };
+
+  // Map the DTW distance function over each land cover class
+  var dtw_image_list = reference_signatures_agg.map(dtw_min_dist);
+  //print('dtw_image_list',dtw_image_list)
+  
+  // Turn image collection into an array
+  var array = ee.ImageCollection(dtw_image_list.values()).toArray();
+  //print('array',array)
+  
+  // Sort array by the first band, keeping other bands
+  var axes = {image:0, band:1};
+  var sort = array.arraySlice(axes.band, 0, 1);  // select bands from index 0 to 1 (DTW dissimilarity score)
+  var sorted = array.arraySort(sort);
+
+  // Take the first image only
+  var values = sorted.arraySlice(axes.image, 0, 1);
+
+  // Convert back to an image
+  var min = values.arrayProject([axes.band]).arrayFlatten([['dtw', 'band']]);
+  //print('min',min)
+  
+  // Extract the DTW dissimilarity score
+  var dtw_score = min.select(0).rename('score_' + year);
+  // Extract the DTW hard classification
+  var dtw_class = min.select(1).rename('classification_' + year);
+
+  // 1. DTW outputs (dissimilarity score + classification map), 2. reference signatures, 3. stack of bands used as input to DTW
+  return [dtw_class.addBands(dtw_score), reference_signatures, s1s2_stack];
+};
+
+
+/**/ // -------------------------------------------------------------------------- 
+/**/ // Create a dictionary mapping land cover class to number of reference signatures per sample
+var reference_signatures_agg = sampling_classes.aggregate_histogram('class');
+
+print('Number of reference signatures per land cover class:',reference_signatures_agg)
+
+
+// DTW Dissimilarity score palette
+var score_palette = palettes.colorbrewer.RdYlGn[9].reverse();
+
+
+/**/ // ----------------------------------------------------
+/**/ // Running DTW for the  year 2020 
+// Compute the DTW classification for the year 2020.
+
+var dtw_outputs = DTWClassification('2020', 'COPERNICUS/S2');
+
+
+var dtw = dtw_outputs[0]; // Extract the DTW dissimilarity score and hard classification
+//var reference_signatures = dtw_outputs[1]; // Extract the reference signatures for 2020.
+var s1s2_stack = dtw_outputs[2]; // Extract the bands stack used as input for DTW.
+var s1s2_list = ee.List([s1s2_stack]); // Convert input bands to list to enable appending data from other years
+
+//print('s1s2 stack',s1s2_stack);
+
+//print('dtw',dtw)
+
+// ---------------------------------------------------------
+// /**/ // Export to drive
+Export.image.toDrive({image:dtw.clip(roi),
+                      description :'Export DTW',
+                      folder:'DT-TWD',
+                      fileNamePrefix :'DTW_2020',
+                      region:roi,
+                      crs:'EPSG:4326',
+                      scale:10
+                      })
+
+// Export collection as a asset. To generate map.
+// Export.image.toAsset({image:s1s2_stack.clip(roi),
+//                       description :'Export-S1S2-TS',
+//                       region:roi,
+//                       crs:'EPSG:4326',
+//                       maxPixels:1e10
+                      
+                      
+// })
+
+/**/ // ----------------------------------------------------
+/**/ // Multi-Year DTW 
+
+// A dictionary that will be iterated over for multi-year land cover mapping.
+// var year_dict = {'2021': 'COPERNICUS/S2_SR',
+//                 '2020': 'COPERNICUS/S2',
+//                 };
+// // Iterate over each land cover/crop class to compute the DTW for each
+// Object.keys(year_dict).forEach(function(i) {
+//   var dtw_outputs = DTWClassification(i, year_dict[i])
+//   print('Calculating for the following year:',year_dict[i])
+//   dtw = dtw.addBands(dtw_outputs[0]);
+//   s1s2_list = s1s2_list.add(dtw_outputs[2]);
+// });
+
+// print('',s1s2_list)
+
+/**/ //------------------------------------------------------------------------------------------
+/**/ // Image Visualization Parameters for the multi-temporal ndvi composite
+// var imageVisParam = {bands: ["ndvi_5", "ndvi_3", "ndvi_1"],
+//                     gamma: 1,
+//                     max: 7000,
+//                     min: 1000,
+//                     opacity: 1
+// };
+
+
+// // ------------------------------------------------------------------------
+// // Visualizing the 
+// Map.addLayer(s1s2_stack.clip(roi), imageVisParam, 'ndvi stack 2020');
+
+
+//imageVisParam['bands'] = ["VV_5", "VV_3", "VV_1"];
+//Map.addLayer(s1s2_stack.clip(roi), imageVisParam, 'VV stack 2020');
+
+

@@ -1,0 +1,6 @@
+*.git
+*.RData
+*.rdb
+*.rdx
+skeleton_cache/
+skeleton_files/

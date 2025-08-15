@@ -10,8 +10,32 @@ The TW-DTW was implemented by: and outputs two bands: Classification and Score.
 A further analysis on the score was processed in order to fine-tunning the classification and improve the results. The analysis used OTSU thresholding for threshold dissimilarity scores.
 
 TW-DTW relies powerful on a scarce data regions. With only 13 samples I was able to classify rice crops extensively. 
-
+  
 ## Repository Structure
+
+```bash 
+scripts_R
+ ┣ Colab
+ ┃ ┗ DTW_GEE_python.ipynb # Phenological analysis of temporal rice crops
+ ┣ GEE
+ ┣ Plots
+ ┃ ┣ classicationmap_dtw.png
+ ┃ ┣ dissimiliarity_score.png
+ ┃ ┣ multitemporal_legend.png
+ ┃ ┗ padddy-rice-mapbiomas.jpeg
+ ┣ R
+ ┃ ┣ barplot.R
+ ┃ ┣ barplot2.R
+ ┃ ┣ colorbar.R
+ ┃ ┣ dtw_score.R
+ ┃ ┣ multi_temporal.kra
+ ┃ ┗ vis-sits.R
+ ┣ Study
+ ┃ ┗ Emanuel-TWDTW.pdf
+ ┣ .gitignore
+ ┣ GIF-NDVI.gif
+ ┗ README.md
+ ```bash
 - R
   | - dtw_score.R ## Create plots for the dissimilarity score
   | - sits.R ## Create the multi-temporal composition plot
