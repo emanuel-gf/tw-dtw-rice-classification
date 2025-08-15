@@ -42,8 +42,7 @@ scripts_R
  ┣ skeleton.html
  ┣ skeleton.Rmd
  ┗ skeletones.bib
-
- ```bash
+ ```
 
 ## Utils
 
