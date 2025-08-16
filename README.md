@@ -76,3 +76,5 @@ scripts_R
 - [SoilWatch](https://github.com/SoilWatch)
 - [Willian Oulette](https://github.com/wouellette/ee-dynamic-time-warping)
 - [MapBiomas](https://brasil.mapbiomas.org/en/)
+- [Hannah Augustin](https://github.com/augustinh22)
+
