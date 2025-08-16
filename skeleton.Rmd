@@ -1,6 +1,6 @@
 ---
-title: "Time-Weighted Dynamic Time Warping Approach for classifying Paddy Rice crops"
-subtitle: "A GEE implementation. Post-Processing MapBiomas LULC collection"
+title: "Paddy Rice Crops Classification."
+subtitle: "A Time-Weighted Dynamic Time Warping Approach"
 author: "Emanuel Goulart."
 date: "`r Sys.Date()`"
 output:
@@ -14,7 +14,7 @@ link-citations: yes
 ---
 
 
-```{r capa, fig.fullwidth = TRUE, fig.width=30, fig.height=10, echo=FALSE}
+```{r capa, fig.fullwidth = TRUE, fig.width=30, fig.height=10, fig.cap="agriculture fields in southern Brazil.", echo=FALSE}
 knitr::include_graphics("Plots/sits_capa.png")
 ```
 
@@ -34,24 +34,40 @@ options(htmltools.dir.version = FALSE)
 ```{r marginfigure, fig.margin = TRUE, fig.cap = "DTW for speech recognition and shape matching of words.", fig.width=2.5, fig.height=2.0, echo=FALSE}
 knitr::include_graphics("Plots/dtw.png")
 ```
-I stumbled upon Dynamic Time Warping (DTW) during a lecture in Earth Observation. Apparently, in the 80's, researchers studying speech patterns developed a measure for describing the similarity between two temporal sequences. Although the DTW technique is robust for shape matching, some authors argue that it is not well suited for remote sensing (RS) because it disregards the temporal range when finding the best alignment.
 
-`r newthought('Think of')` it as each land-cover class having a distinct phenological cycle that is relevant for space–time classification and should be considered for crop monitoring. Therefore, a good time-series land-cover classifier needs to balance shape matching with temporal alignment. 
+# Context
 
-[image with crops classification]
+I stumbled upon Dynamic Time Warping (DTW) during a lecture in Earth Observation, where later I got to do a case of study of it. 
+
+There is no much things of TW-DTW for Remote Sensing (RS) around it. Whether most of the content are on __trending mode__^[okay, fair!!] towards DL^[Deep Learning/Machine Learning] approaches, than compared with old-fashioned way of time-series^[Satellite Image Time Series] analysis. This give me the compelling to try it out, classifying paddy rice in my hometown region
+
+The current work, is a study case using TW-DTW for classifying paddy rice crops in southern Brazil on `r newthought("__Google Earth Engine__")` platform. All the code used and some further explanation is available on [github](""https://github.com/emanuel-gf/tw-dtw-rice-classification/blob/main"). I also implemented a panel of [GEE](https://ee-emanuelgoulartf.projects.earthengine.app/view/twdtw-resultspanel) to display the results and also the multi-temporal composition.^[
+[GEEPanel](https://ee-emanuelgoulartf.projects.earthengine.app/view/twdtw-resultspanel)
+]
+
+# Introduction
+
+Apparently, in the 80's, researchers studying speech patterns developed a measure for describing the similarity between two temporal sequences. Although the DTW technique is robust for shape matching, some scholars argue it is not suited for Remote Sensing (RS), because it disregards the temporal range when finding the best alignment.
+
+```{r pheno, fig.margin=TRUE,fig.width=3 ,fig.cap="phenology of irrigated rice in Brazil.",echo=FALSE}
+knitr::include_graphics("Plots/icons/pheno.png")
+
+```
+
+`r newthought('Think of')` it as: each land cover class has a distinct phenological cycle that is relevant for the space-time classification, which definitely need to be considered for crop monitoring tasks. Therefore, a good suited remote sensing DTW based algorithm needs to balance shape matching with temporal alignment. 
+
+Thus, @Maulsetal  introduced an improvement of the DTW, by adding a time-weight constraint. The improvement gave tools to accounting seasonality as a factor on it. Which has pushed other developments on the domain, include treating classification as an object-based rather than pixel-based task. 
 
 
-@Maulsetal  introduced an improvement by adding a time-weight constraint to DTW. Other developments include treating classification as an object-based rather than pixel-based task, which helps avoid the salt-and-pepper effect. In the RS field, Earth monitoring has been ongoing for many years, and DTW has emerged as a potential tool.
+## Google Earth Engine
 
+The __OG__ implementation of tw-dtw is in @R-base, which I love, but my laptop seems to struggle with it on bigger tasks. Necessity pushes us to explore some alternatives and thanks to big-hearted RS community, there is an implementation of the TW-DTW algorithm in GEE made by Willian Oullette. ^[See Github repository: [Willian Oullette]("https://github.com/wouellette/ee-dynamic-time-warping")]
 
-## Context 
-
-There is no much things on TW-DTW for RS around. The tw-dtw implementation is in @R-base, which I love, but my laptop seems to struggle on bigger tasks. Necessity pushes us to explore some alternatives and thanks to RS community, there is an implementation of the TW-DTW algorithm in GEE. ^[See Github repository: [Willian Oullette]("https://github.com/wouellette/ee-dynamic-time-warping")]
-
-`r tufte::newthought("This is ")`  a case study of DTW applied for classifying paddy rice crops.
+## Why TW-DTW?
 
 The prime is that tw-dtw performs well without limited training data, making it particularly valuable in data-scarce scenarios. Contrasting with deep-learning (DL) methods which usually requires a higher data training to not under-perform. 
 
+And the scarcity of training data is in what the current study is focused on.With only 13 training samples, an area of 48,000 km² (roughly same size of Switzerland) is classified, resulting on rice crops extent in the order of 8,5 km² out of the whole study area.
 
 ## MAPBIOMAS
 
