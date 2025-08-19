@@ -18,7 +18,7 @@ The study is based on a multi-sensor approach, using Sentinel-1 and Sentinel-2.
 1. Here there're some content about it and brief introduction. 
 [Study Case](https://emanuel-gf.github.io/tw-dtw-rice-classification/)
 
-2. Panel with the assets outputs from twdtw: [PANEL-GEE-OUTCOME]("https://ee-emanuelgoulartf.projects.earthengine.app/view/twdtw-resultspanel")
+2. Panel with the assets outputs from twdtw: [PANEL-GEE-OUTCOME](https://ee-emanuelgoulartf.projects.earthengine.app/view/twdtw-resultspanel)
 
 
 3 - Here the .pdf of study case which originates this repo. Developed for Analysis and Modelling subject at [Copernicus Master](https://master-cde.eu/) - [PDF](https://github.com/emanuel-gf/tw-dtw-rice-classification/blob/main/pdf/Emanuel-TWDTW.pdf)
@@ -59,7 +59,7 @@ scripts_R
 
 ## Utils
 
-- Check this GEE panel with the all results: [Results]("https://ee-emanuelgoulartf.projects.earthengine.app/view/twdtw-resultspanel")
+- Check this GEE panel with the all results: [Results](https://ee-emanuelgoulartf.projects.earthengine.app/view/twdtw-resultspanel)
 
 ## GIF
 
@@ -84,5 +84,6 @@ scripts_R
 - [Willian Oulette](https://github.com/wouellette/ee-dynamic-time-warping)
 - [MapBiomas](https://brasil.mapbiomas.org/en/)
 - [Hannah Augustin](https://github.com/augustinh22)
+
 
 
