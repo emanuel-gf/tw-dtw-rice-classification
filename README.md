@@ -1,18 +1,29 @@
 Time-Weighted Dynamic Time Warping (TW-DTW)
 
-This is a implementation of the TW-DTW to classify paddy rice crops in southern Brazil.
+This is a implementation of TW-DTW to classify paddy rice crops in southern Brazil on google earth engine.
 
-The current repository is a show-case of how TW-DTW has robustness on classifing time crops, taking its seasonality by looking at the similarity of time series. 
+## Classification Results
+
+![Classification](Plots/qualitymap/classificationmap_dtw.png)
+
+
+The repo is a show-case of how TW-DTW has robustness on classifing crops, in special, paddy rice, on the context of land use agriculture classes. The algorithm fits a given seasonality when comparing similiarity of time series, having its strength  by capturing periodicity as a feature over the time dimension. 
+
+Perhaps an interesing feature for deep learning models
 
 The study is based on a multi-sensor approach, using Sentinel-1 and Sentinel-2.
 
 ## QuickStart
 
-1. For a better context and understading, please check this study. 
+1. Here there're some content about it and brief introduction. 
 [Study Case](https://emanuel-gf.github.io/tw-dtw-rice-classification/)
 
-2. The whole study version is publish at this pdf: 
-[PDF](https://github.com/emanuel-gf/tw-dtw-rice-classification/blob/main/pdf/Emanuel-TWDTW.pdf)
+2. Panel with the assets outputs from twdtw: [PANEL-GEE-OUTCOME]("https://ee-emanuelgoulartf.projects.earthengine.app/view/twdtw-resultspanel")
+
+
+3 - Here the .pdf of study case which originates this repo. Developed for Analysis and Modelling subject at [Copernicus Master](https://master-cde.eu/) - [PDF](https://github.com/emanuel-gf/tw-dtw-rice-classification/blob/main/pdf/Emanuel-TWDTW.pdf)
+
+The scripts are within this repo
 
 ## Repository Structure
 
@@ -55,10 +66,6 @@ scripts_R
 ![gif](Plots/GIF-NDVI.gif)
 
 
-## Classification Results
-
-![Classification](Plots/qualitymap/classificationmap_dtw.png)
-
 ## Dissimilarity Score
 
 ![Dissimilarity](Plots/qualitymap/diss_score.png)
@@ -77,4 +84,5 @@ scripts_R
 - [Willian Oulette](https://github.com/wouellette/ee-dynamic-time-warping)
 - [MapBiomas](https://brasil.mapbiomas.org/en/)
 - [Hannah Augustin](https://github.com/augustinh22)
+
 
